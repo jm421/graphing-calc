@@ -1,0 +1,3 @@
+gcc -c -frounding-math -ansi tinyexpr.c -fms-extensions -I. -Ilib/ -o tinyexpr.o
+gcc -c -frounding-math -ansi plotPNG.c -fms-extensions -I. -Ilib/ -o plotPNG.o
+gcc tinyexpr.o plotPNG.o -Llib/ -lm -lpng -o plotPNG
